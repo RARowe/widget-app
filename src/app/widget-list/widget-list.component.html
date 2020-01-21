@@ -7,7 +7,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let w of getWidgets() | async">
-            <td>{{ w.name }}</td>
+            <td><a routerLink="/widgets/{{w.id}}">{{ w.name }}</a></td>
             <td>{{ w.description }}</td>
             <td>{{ w.revenue | currency }}</td>
             <td>{{ w.timestamp }}</td>
