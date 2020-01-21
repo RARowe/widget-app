@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { WidgetListComponent } from './widget-list/widget-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WidgetDetailComponent } from './widget-detail/widget-detail.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
     WidgetListComponent,
-    WidgetDetailComponent
+    WidgetDetailComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
