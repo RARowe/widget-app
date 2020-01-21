@@ -6,7 +6,10 @@ import { WidgetDetailComponent } from './widget-detail/widget-detail.component';
 
 const routes: Routes = [
   {
-    path: 'widgets', component: WidgetListComponent,
+    path: '', component: WidgetListComponent
+  },
+  {
+    path: 'widgets', component: WidgetListComponent
   },
   {
     path: 'widgets/:id', component: WidgetDetailComponent
