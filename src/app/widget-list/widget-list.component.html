@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Revenue</th>
+        <th>Timestamp</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let w of getWidgets() | async">
+            <td>{{ w.name }}</td>
+            <td>{{ w.description }}</td>
+            <td>{{ w.revenue | currency }}</td>
+            <td>{{ w.timestamp }}</td>
+        </tr>
+    </tbody>
+</table>
