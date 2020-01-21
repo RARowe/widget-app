@@ -64,7 +64,7 @@ export class LineChartComponent implements OnInit {
       for (const [_, value] of Object.entries(groups)) {
         data.push((<Array<ChartData>>value).map(cd => cd.data).reduce((acc, v) => acc + v));
       }
-      console.log(data);
+      
       this.lineChartData = [
         { data: data, label: 'Revenue' },
       ]
