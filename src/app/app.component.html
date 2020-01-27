@@ -2,7 +2,7 @@
   <a mat-tab-link
      [routerLink]="'/widgets'"
      routerLinkActive #rla="routerLinkActive"
-     [active]="route === '/widgets'">
+     [active]="route.includes('/widgets') || route === '/'">
      <mat-icon class="example-tab-icon">list</mat-icon>
      <span class="tab-label">List</span>
   </a>

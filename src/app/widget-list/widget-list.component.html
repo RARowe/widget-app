@@ -1,17 +1,6 @@
 
     <div fxLayout="row" fxLayout="row wrap" class="card-deck-container mat-elevation-z4">
       <div fxFlex *ngFor="let w of getWidgets() | async" class="card-item">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title routerLink="/widgets/{{w.id}}" class="link-title">{{ w.name }} ({{ w.timestamp }})</mat-card-title>
-            <mat-card-subtitle style="color: green">{{ w.revenue | currency }}</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image routerLink="/widgets/{{w.id}}" src="assets/img/{{w.id}}.jpg" alt="Photo of {{ w.id }}" style="cursor: pointer; max-height: 240px">
-          <mat-card-content>
-            <p>
-              {{ w.description }}
-            </p>
-          </mat-card-content>
-        </mat-card>
+        <widget-card [widget]="w"></widget-card>
       </div>
     </div>

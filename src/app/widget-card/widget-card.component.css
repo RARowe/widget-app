@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 400px;
+    width: 400px;
+  }
+
+
+
+.link-title {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .link-title:hover {
+    color: grey;
+  }

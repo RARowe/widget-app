@@ -11,13 +11,15 @@ import { ChartsModule } from 'ng2-charts';
 import { MatCardModule, MatButtonModule, MatGridListModule, MatIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatTabsModule} from '@angular/material/tabs';
+import { WidgetCardComponent } from './widget-card/widget-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WidgetListComponent,
     WidgetDetailComponent,
-    LineChartComponent
+    LineChartComponent,
+    WidgetCardComponent
   ],
   imports: [
     BrowserModule,
