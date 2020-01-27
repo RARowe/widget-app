@@ -18,7 +18,7 @@
   <div fxFlex *ngFor="let w of getWidgets() | async" class="card-item">
     <mat-card class="example-card">
       <mat-card-header>
-        <mat-card-title>{{ w.id }} ({{ w.timestamp }})</mat-card-title>
+        <mat-card-title routerLink="/widgets/{{w.id}}" class="link-title">{{ w.name }} ({{ w.timestamp }})</mat-card-title>
         <mat-card-subtitle style="color: green">{{ w.revenue | currency }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="assets/img/{{w.id}}.jpg" alt="Photo of {{ w.id }}" style="max-height: 240px">

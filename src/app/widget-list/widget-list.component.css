@@ -15,3 +15,12 @@
 .card-item {
   padding: 3px 3px 3px 3px;
 }
+
+.link-title {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-title:hover {
+  color: grey;
+}
