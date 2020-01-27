@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WidgetDetailComponent } from './widget-detail/widget-detail.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
+import { MatCardModule, MatButtonModule, MatGridListModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,11 @@ import { ChartsModule } from 'ng2-charts';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ChartsModule
+    ChartsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
