@@ -21,15 +21,12 @@
         <mat-card-title routerLink="/widgets/{{w.id}}" class="link-title">{{ w.name }} ({{ w.timestamp }})</mat-card-title>
         <mat-card-subtitle style="color: green">{{ w.revenue | currency }}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="assets/img/{{w.id}}.jpg" alt="Photo of {{ w.id }}" style="max-height: 240px">
+      <img mat-card-image routerLink="/widgets/{{w.id}}" src="assets/img/{{w.id}}.jpg" alt="Photo of {{ w.id }}" style="cursor: pointer; max-height: 240px">
       <mat-card-content>
         <p>
           {{ w.description }}
         </p>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-button routerLink="/widgets/{{w.id}}">View</button>
-      </mat-card-actions>
     </mat-card>
   </div>
 </div>
