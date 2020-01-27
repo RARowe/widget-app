@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { first } from 'rxjs/operators';
+import { first, filter } from 'rxjs/operators';
 import { WidgetService } from './widget.service';
 import { Widget } from './widget';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +12,13 @@ import { Widget } from './widget';
 })
 export class AppComponent {
   title = 'widget-app';
-  constructor(private readonly _widgets: WidgetService) { 
-    this.getWidgets()
-  }
+  route = window.location.pathname;
+  constructor(router: Router) {
 
-  public getWidgets(){//: Observable<Widget[]> {
-    return this._widgets.getAll().subscribe(ws => console.log(ws));
+    router.events
+      .pipe(filter(e => e instanceof NavigationStart))  
+    .subscribe((event: any) => {
+      this.route = event.url;
+    })
   }
 }

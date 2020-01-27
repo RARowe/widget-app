@@ -1,9 +1,4 @@
-<mat-tab-group>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <mat-icon class="example-tab-icon">list</mat-icon>
-      <span class="tab-label"> List</span>
-    </ng-template>
+
     <div fxLayout="row" fxLayout="row wrap" class="card-deck-container mat-elevation-z4">
       <div fxFlex *ngFor="let w of getWidgets() | async" class="card-item">
         <mat-card class="example-card">
@@ -20,12 +15,3 @@
         </mat-card>
       </div>
     </div>
-  </mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <mat-icon class="example-tab-icon">show_chart</mat-icon>
-      <span class="tab-label"> Revenue Summary</span>
-    </ng-template>
-    <line-chart></line-chart>
-  </mat-tab>
-</mat-tab-group>
