@@ -12,6 +12,7 @@ import { MatCardModule, MatButtonModule, MatGridListModule, MatIconModule } from
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatTabsModule} from '@angular/material/tabs';
 import { WidgetCardComponent } from './widget-card/widget-card.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { WidgetCardComponent } from './widget-card/widget-card.component';
     MatGridListModule,
     FlexLayoutModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

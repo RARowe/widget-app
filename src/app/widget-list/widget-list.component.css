@@ -10,3 +10,7 @@
 .card-item {
   padding: 3px 3px 3px 3px;
 }
+
+table {
+  width: 100%;
+}
