@@ -29,7 +29,7 @@ function groupBy(xs, key) {
   }, {});
 };
 @Component({
-  selector: 'app-line-chart',
+  selector: 'line-chart',
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css']
 })
