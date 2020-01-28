@@ -1,6 +1,6 @@
     <div style="float:right">
-      <button mat-button (click)="showCardView()" [style.backgroundColor]="showCards ? '#7FFFD4' : ''">Card view</button>
-      <button mat-button (click)="showTableView()" [style.backgroundColor]="showCards ? '' : '#7FFFD4'">Table view</button>
+      <button mat-button (click)="showCardView()" [style.backgroundColor]="showCards ? 'lightgrey' : ''">Card view</button>
+      <button mat-button (click)="showTableView()" [style.backgroundColor]="showCards ? '' : 'lightgrey'">Table view</button>
     </div>
     <div *ngIf="showCards" fxLayout="row" fxLayout="row wrap" class="card-deck-container mat-elevation-z4">
       <div fxFlex *ngFor="let w of getWidgets() | async" class="card-item">
