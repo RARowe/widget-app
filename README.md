@@ -6,5 +6,5 @@ npm version: `6.13.4`
 
 ## Setup
 1. Install [Angular CLI](https://cli.angular.io/)
-2. Run `npm install` (I used npm version `6.13.4`)
+2. Run `npm install`
 3. Serve app by running `ng serve` or `npm start`
